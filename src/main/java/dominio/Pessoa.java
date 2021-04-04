@@ -8,11 +8,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Pessoa implements Serializable{
-	private static final long serialVersionUID = 1L;
+public class Pessoa implements Serializable { /* compatibilidade caso aja alteracao */
+	private static final long serialVersionUID = 1L; /* serial de compatibilidade */
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY) /* gerar o id */
 	private Integer id;
 	
 	/* @Column(name="nome_completo") *//* para deixa nome diferente na coluna do BD */

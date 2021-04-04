@@ -22,7 +22,7 @@ public class Programa {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("exemplo-jpa");
 		EntityManager em = emf.createEntityManager();
 
-		/* Alterar banco
+		/* Colocar no banco
 		 * Inicio da alteracao
 		*/
 		/*
